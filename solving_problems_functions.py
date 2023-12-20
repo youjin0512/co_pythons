@@ -1,5 +1,5 @@
 # 문제 출력/사용자 입력 받는 function
-def problems_main(questions) :      # hint  
+def problems_main(questions) :      # hint #탈자 추가 : problems_m => problems_main 
     
     #list_problems 에서 질문에만 번호 부여하기 위해 인덱스 홀수 짝수로 나눔
     problems_first = questions[1], questions[3], questions[5], questions[7]
@@ -72,5 +72,5 @@ if __name__ == "__main__":
     list_corrects = [4, 1, 1, 1 ]    # hint : 정답에 맞춰 수정
 
 
-    problems_main(list_problems) #탈자 추가 : problems_m => problems_main
+    problems_main(list_problems) 
 
