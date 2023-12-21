@@ -3,8 +3,8 @@ class Question_Answer:
     #함수가 인스턴스 메소드라면 첫 인자를 'self'로 줘야 대상이 되는 인스턴스가 정확히 무엇인지 확인
     #__init__()은 반드시 첫 번째 인수로 self를 지정
     def __init__(self, problems, correct_answers):
-        problems = problems    # hint
-        self.correct_answers = self.correct_answers     # hint
+        self.problems = problems    # hint  왼쪽 problems -> self.problems 으로 수정
+        self.correct_answers = correct_answers     # hint  오른쪽 self.correct_answers -> correct_answers으로 수정
         
     def problems_main(self):
         problems_first = self.problems[1], self.problems[3], self.problems[5], self.problems[7]
@@ -12,7 +12,7 @@ class Question_Answer:
 
         list_results = []
         
-        for question in range(1):    # hint
+        for question in range(len(problems_first)):    # hint  range(1) -> 
             question_a = problems_second[question]
             question_b = problems_first[question]
 
